@@ -13,37 +13,48 @@
     <header class="header header--gray" id="header">
         <div class="container">
             <div class="header__wrapper">
-                <a href="index.html" class="logotype">
-                    <img src="img/dist/logotype.svg" alt="Лемаком">
-                </a>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="products.html" class="nav__link">каталог</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="services.html" class="nav__link">Услуги</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="about-us.html" class="nav__link">о нас</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="services-delivery.html" class="nav__link">доставка</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="contacts.html" class="nav__link">контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header__group">
-                    <span class="header__text"><strong>Работаем с 9:00 до 18:00</strong></span>
-                    <span class="header__text">В Хабаровске 15:36</span>
-                </div>
-                <div class="header__group">
-                    <div class="header__text">
-                        <strong><a href="tel:89626779044">8 962 677 90 44</a> / <a href="tel:636225">63 62 25</a></strong>
+                <button class="hamburger" id="hamburger-toggle">
+                    Меню
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+                <div class="overlay">
+                    <a href="index.html" class="logotype logotype--header">
+                        <img src="img/dist/logotype.svg" alt="Лемаком">
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="products.html" class="nav__link">каталог</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="services.html" class="nav__link">Услуги</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="about-us.html" class="nav__link">о нас</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="services-delivery.html" class="nav__link">доставка</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="contacts.html" class="nav__link">контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__group">
+                        <span class="header__text"><strong>Работаем с 9:00 до 18:00</strong></span>
+                        <span class="header__text">В Хабаровске 15:36</span>
                     </div>
-                    <a href="" class="header__text header__request-call">Заказать звонок</a>
+                    <div class="header__group">
+                        <div class="header__text">
+                            <strong><a href="tel:89626779044">8 962 677 90 44</a> / <a href="tel:636225">63 62 25</a></strong>
+                        </div>
+                        <a href="" class="header__text header__request-call">Заказать звонок</a>
+                    </div>
+                    <button class="header__order order-btn order-btn--sm">
+                        <span class="order-btn--title">ЗАКАЗАТЬ Раскрой и мебель</span>
+                    </button>
                 </div>
                 <button class="order-btn order-btn--sm">
                     <span class="order-btn--title">ЗАКАЗАТЬ <br>Раскрой и мебель</span>
@@ -280,12 +291,14 @@
                             <span><strong>Сб: с 9:00 до 14:00</strong></span>
                             <span><strong>Вс: Выходной</strong></span>
                         </p>
-                        <a href="tel:74212636225" class="footer__contact">+7 4212 63 62 25</a>
-                        <a href="mailto:evseidv@mail.ru" class="footer__contact">evseidv@mail.ru</a>
+                        <div class="footer__contacts">
+                            <a href="tel:74212636225" class="footer__contact">+7 4212 63 62 25</a>
+                            <a href="mailto:evseidv@mail.ru" class="footer__contact">evseidv@mail.ru</a>
+                        </div>
                         <span class="footer__current-time">Время в Хабаровске <span>15:36</span></span>
                     </div>
                     <div class="footer__column">
-                        <a href="index.html" class="logotype">
+                        <a href="index.html" class="logotype logotype--footer">
                             <img src="img/dist/logotype-footer.svg" alt="Лемаком">
                         </a>
                         <p class="footer__copyright">Copyright 2006-2021 © Lemakom.ru - Интернет-магазин товаров для производства мебели. Все права защищены.</p>
